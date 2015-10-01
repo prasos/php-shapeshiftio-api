@@ -9,3 +9,5 @@ use ShapeShiftIO\ShapeShiftApi;
 $api = new ShapeShiftApi();
 $rate = $api->rate('btc_ltc');
 ```
+
+Check out the documentation here: https://shapeshift.io/site/api
