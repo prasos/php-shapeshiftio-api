@@ -1,5 +1,14 @@
 <?php
-
+/**
+ *
+ *
+ * php-shapeshiftio-api 2015
+ *
+ * @author Sebastian Mäki <sebastian@tico.fi>
+ * @package php-shapeshiftio-api
+ *
+ *
+ */
 namespace ShapeShiftIO;
 
 use ShapeShiftIO\HttpClient;

@@ -1,5 +1,14 @@
 <?php
-
+/**
+ * 
+ *
+ * php-shapeshiftio-api 2015
+ *
+ * @author Sebastian Mäki <sebastian@tico.fi>
+ * @package php-shapeshiftio-api
+ *
+ * 
+ */
 namespace ShapeShiftIO;
 
 use GuzzleHttp;
@@ -17,11 +26,13 @@ class HttpClient
 {
 
     /**
+     * Options for the HTTP-client
+     * 
      * @var array
      */
     private $options = array(
         'base_uri'    => 'https://shapeshift.io/',
-        'user_agent'  => 'php-shapeshift-api (http://github.com/neatbasis/php-shapeshift-api)',
+        'user_agent'  => 'php-shapeshiftio-api (http://github.com/neatbasis/php-shapeshiftio-api)',
         'timeout'     => 10
     );
 
@@ -62,6 +73,8 @@ class HttpClient
     }
 
     /**
+     * Get the HTTP Client
+     * 
      * @return GuzzleHttp\ClientInterface
      */
     public function getHttpClient()
@@ -71,6 +84,8 @@ class HttpClient
     }
 
     /**
+     * Set the HTTP Client
+     * 
      * @param GuzzleHttp\ClientInterface $httpClient
      */
     public function setHttpClient(GuzzleHttp\ClientInterface $httpClient)
@@ -79,6 +94,7 @@ class HttpClient
     }
     
     /**
+     * GET request handling
      * 
      * @param string $path
      * @param array $query
@@ -98,7 +114,8 @@ class HttpClient
     }
     
     /**
-     *
+     * POST request handling
+     * 
      * @param string $path
      * @param array $data
      *
