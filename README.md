@@ -1,6 +1,6 @@
 # php-shapeshiftio-api
 
-php-shapeshiftio-api is a php library for interacting with ShapeShift.io api. It's till work in progress.
+php-shapeshiftio-api is a php library for interacting with ShapeShift.io api. It's still work in progress.
 
 ### Usage:
 
